@@ -5,10 +5,10 @@ body{
     margin-top: 10%;
     background-image: 
     linear-gradient(rgba(255, 255, 0, 0.8)0%,
-rgba(255, 255, 255, 1)100%); 
-background-repeat: no-repeat;
-border: black 2px solid;
-border-radius: 25px;
+    rgba(255, 255, 255, 1)100%); 
+    background-repeat: no-repeat;
+    border: black 2px solid;
+    border-radius: 25px;
 }
 
 h1{
@@ -16,10 +16,13 @@ h1{
     font-family: 'Eater', cursive;     
 }
 .lampada{
-height: 220px;
-width: 169px;
-opacity: 0;
+    height: 220px;
+    width: 169px;
 }
-.lampada:hover{
-    opacity: 1;
+
+#Luz{
+    opacity: 0;
+}
+h2{
+    display: none;
 }

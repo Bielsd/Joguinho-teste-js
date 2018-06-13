@@ -1,20 +1,17 @@
 let quebrada = false;
-let textoaparece = false;
+let lampada = document.querySelector("#Luz");
 
 function mudaLampada (tipo){
-    if (!quebrada){
-        document.getElementById("Luz").src= "imagens/" + tipo + ".jpg";
-        if (tipo =='lampada-quebrada'){
-            quebrada = true;
-            if (quebrada == true){
-                textoaparece == true
-                if (textoaparece == true){
-                    getElementById("texto1")
-                }
-            }
-                
-            
-        }
+    if(quebrada){
+        return;
+    }
+
+    lampada.src = "imagens/" + tipo + ".jpg";
+    lampada.style.opacity = 1;
+
+    if(tipo === 'lampada-quebrada'){
+        document.querySelector(".texto1").style.display = 'block';
+        quebrada = true;
     }
       
 }
