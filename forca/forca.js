@@ -1,3 +1,19 @@
+let tempo = 3600;
+
+
+function voltaInicio(){
+    setTimeout(function (){
+                    location.href = "file:///C:/Users/rackadm052/Desktop/Joguinho-teste-js/Fase1/fase1.html";
+                    console.log(tempo);
+           },tempo);             
+    }
+  
+  
+    
+    
+
+
+
 function gerarTracinho(entrada){
     let palavra = "";
     for(let letra of entrada){
